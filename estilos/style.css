@@ -270,17 +270,16 @@ section#ben > article#ben-cont > div.ben-ficha{
     transition: .2s;
 }
 
+section#ben > article#ben-cont > div.ben-ficha:hover{
+    padding: 10px;
+    width: 100%;
+    background-color: lightcoral;
+}
+
 /* Beneficos - Artigo - Texto */
 section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info{
     padding: 10px;
     width: 100%;
-}
-
-section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info:hover{
-    padding: 10px;
-    width: 100%;
-    background-color: lightcoral;
-    
 }
 
 section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info > p{
