@@ -1,0 +1,483 @@
+@charset "UTF-8";
+
+/* Diferentes Telas:
+-------------------------------
+Celular: 0px até 600px
+Tablet: de 600px até 992px
+Computador: de 992px até 1200px
+Tv: de 1200px para mais+
+-------------------------------
+*/
+
+
+/* Tela de Tablet */
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    /* Cabecalho */
+    header > menu > div > a{
+        font-size: 1.4em;
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 2.7em;
+        padding-bottom: 10px;
+    }
+
+    /* Banner 1 */
+    section#bannerM{
+        width: 100%;
+        height: 500px;
+    }
+
+    div.banInfo{
+        color: white;
+        text-align: center;
+        padding: 15px;
+    
+        width: 320px;
+        height: 140px;
+        border: 2px solid white;
+        border-radius: 10px 10px;
+    }
+
+    div.banInfo > h3{
+        text-decoration: underline;
+        font-size: 1.5em;
+    }
+    
+    div.banInfo > p{
+        padding-top: 5px;
+        font-size: 1.4em;
+    }
+
+    /* Sessão Produtos */
+    main{
+        padding-bottom: 40px;
+    }
+
+    h2{
+        font-size: 2.3em;
+    }
+
+    section#pro img{
+        height: 200px;
+        width: 220px;
+    }
+
+    div.txtInfo{
+        background-color: rgba(32, 178, 171, 0.637);
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+    div.txtInfo > h3{
+        font-size: 1.5em;
+    }
+
+    div.txtInfo > p{
+        font-size: 1.4em;
+    }
+
+    /* Banner 2 */
+    section#bannerS{
+        width: 100%;
+        height: 520px;
+    }
+
+    div#banS{
+        width: 100%;
+        height: 520px;
+        background-color: rgba(251, 255, 0, 0.137);
+    }
+
+    /* Sessão Beneficios */
+    section#ben > article#ben-txt > h2{
+        font-size: 2.4em;
+        font-weight: 600;
+        padding: 10px;
+        margin-bottom: 5px;
+        line-height: 30px;
+    }
+    
+    section#ben > article#ben-txt > h2 span{
+        font-size: .8em;
+        font-weight: 400;
+    }
+
+    /* Beneficios - Artigos */
+    section#ben > article#ben-cont{
+        display: flex;
+        align-items: center;
+        flex-flow: wrap column;
+    }
+
+    section#ben > article#ben-cont > div.ben-ficha{
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+        display: flex;
+        margin: 20px 0px;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        transition: .2s;
+    }
+
+    /* Beneficos - Artigo - Texto */
+    section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info{
+        padding: 25px;
+        width: 100%;
+    }
+
+    section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info:hover{
+        padding: 25px;
+        width: 100%;
+        background-color: lightcoral;
+    }
+
+    section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info > h3{
+        font-size: 1.5em;
+    }
+
+    section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info > p{
+        font-size: 1.4em;
+        text-align: justify;
+    }
+
+    /* Beneficios - Artigo - Imagem */
+    div.foto img{
+        height: 290px;
+        width: 240px;
+    }
+
+    /* Sessão Contato */
+    div#cont > div.item > a > button{
+        width: 260px;
+        height: 60px;
+        padding: 35px;
+
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+}
+
+/* Tela de Computador */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    /* Cabecalho */
+    header > menu > div > a{
+        font-size: 1.4em;
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 2.7em;
+        padding-bottom: 10px;
+    }
+
+    /* Banner 1 */
+    section#bannerM{
+        width: 100%;
+        height: 520px;
+    }
+
+    div.banInfo{
+        color: white;
+        text-align: center;
+        padding: 15px;
+    
+        width: 320px;
+        height: 140px;
+        border: 2px solid white;
+        border-radius: 10px 10px;
+    }
+
+    div.banInfo > h3{
+        text-decoration: underline;
+        font-size: 1.5em;
+    }
+    
+    div.banInfo > p{
+        padding-top: 5px;
+        font-size: 1.4em;
+    }
+
+    /* Sessão Produtos */
+    main{
+        padding-bottom: 40px;
+    }
+
+    h2{
+        font-size: 2.3em;
+    }
+
+    div.ficha{
+        width: 440px;
+    }
+
+    section#pro img{
+        height: 220px;
+        width: 240px;
+    }
+
+    div.txtInfo{
+        background-color: rgba(32, 178, 171, 0.637);
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+    div.txtInfo > h3{
+        font-size: 1.5em;
+    }
+
+    div.txtInfo > p{
+        font-size: 1.4em;
+    }
+
+    /* Banner 2 */
+    section#bannerS{
+        width: 100%;
+        height: 540px;
+    }
+
+    div#banS{
+        width: 100%;
+        height: 540px;
+        background-color: rgba(251, 255, 0, 0.137);
+    }
+
+    /* Sessão Beneficios */
+    section#ben > article#ben-txt > h2{
+        font-size: 2.4em;
+        font-weight: 600;
+        padding: 10px;
+        margin-bottom: 5px;
+        line-height: 30px;
+    }
+    
+    section#ben > article#ben-txt > h2 span{
+        font-size: .8em;
+        font-weight: 400;
+    }
+
+    /* Beneficios - Artigos */
+    section#ben > article#ben-cont{
+        display: flex;
+        align-items: center;
+        flex-flow: wrap column;
+    }
+
+    section#ben > article#ben-cont > div.ben-ficha{
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+        display: flex;
+        margin: 20px 0px;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        transition: .2s;
+    }
+
+    /* Beneficos - Artigo - Texto */
+    section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info{
+        padding: 25px;
+        width: 100%;
+    }
+
+    section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info:hover{
+        padding: 25px;
+        width: 100%;
+        background-color: lightcoral;
+    }
+
+    section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info > h3{
+        font-size: 1.5em;
+    }
+
+    section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info > p{
+        font-size: 1.4em;
+        text-align: justify;
+    }
+
+    /* Beneficios - Artigo - Imagem */
+    div.foto img{
+        height: 290px;
+        width: 240px;
+    }
+
+    /* Sessão Contato */
+    div#cont > div.item > a > button{
+        width: 260px;
+        height: 60px;
+        padding: 35px;
+
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+}
+
+/* Tela de Tv */
+@media screen and (min-width: 1200px){
+    /* Cabecalho */
+    header > menu > div > a{
+        font-size: 1.5em;
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 2.7em;
+        padding-bottom: 10px;
+    }
+
+    /* Banner 1 */
+    section#bannerM{
+        width: 100%;
+        height: 560px;
+    }
+
+    div.banInfo{
+        color: white;
+        text-align: center;
+        padding: 15px;
+    
+        width: 320px;
+        height: 140px;
+        border: 2px solid white;
+        border-radius: 10px 10px;
+    }
+
+    div.banInfo > h3{
+        text-decoration: underline;
+        font-size: 1.5em;
+    }
+    
+    div.banInfo > p{
+        padding-top: 5px;
+        font-size: 1.4em;
+    }
+
+    /* Conteudo Principal */
+    main{
+        padding-bottom: 40px;
+    }
+
+    h2{
+        font-size: 2.3em;
+    }
+
+    div.ficha{
+        width: 440px;
+    }
+
+    /* Sessão Produtos */
+    section#pro{
+        padding: 40px;
+    }
+
+    section#pro img{
+        height: 220px;
+        width: 240px;
+    }
+
+    div.txtInfo{
+        background-color: rgba(32, 178, 171, 0.637);
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+    div.txtInfo > h3{
+        font-size: 1.5em;
+    }
+
+    div.txtInfo > p{
+        font-size: 1.4em;
+    }
+
+    /* Banner 2 */
+    section#bannerS{
+        width: 100%;
+        height: 580px;
+    }
+
+    div#banS{
+        width: 100%;
+        height: 580px;
+        background-color: rgba(251, 255, 0, 0.137);
+    }
+
+    /* Sessão Beneficios */
+    section#ben{
+        padding: 40px;
+        width: 90%;
+        margin: auto;
+    }
+
+    section#ben > article#ben-txt > h2{
+        font-size: 2.4em;
+        font-weight: 600;
+        padding: 10px;
+        margin-bottom: 5px;
+        line-height: 30px;
+    }
+    
+    section#ben > article#ben-txt > h2 span{
+        font-size: .8em;
+        font-weight: 400;
+    }
+
+    /* Beneficios - Artigos */
+    section#ben > article#ben-cont{
+        display: flex;
+        align-items: center;
+        flex-flow: wrap column;
+    }
+
+    section#ben > article#ben-cont > div.ben-ficha{
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+        display: flex;
+        margin: 20px 0px;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        transition: .2s;
+    }
+
+    /* Beneficos - Artigo - Texto */
+    section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info{
+        padding: 25px;
+        width: 100%;
+    }
+
+    section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info:hover{
+        padding: 25px;
+        width: 100%;
+        background-color: lightcoral;
+    }
+
+    section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info > h3{
+        font-size: 1.5em;
+    }
+
+    section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info > p{
+        font-size: 1.4em;
+        text-align: justify;
+    }
+
+    /* Beneficios - Artigo - Imagem */
+    div.foto img{
+        height: 290px;
+        width: 240px;
+    }
+
+    /* Sessão Contato */
+    div#cont > div.item > a > button{
+        width: 260px;
+        height: 60px;
+        padding: 35px;
+
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,370 @@
+@charset "UTF-8";
+
+/* Tela para Celular */
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgba(240, 128, 128, 0.562);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: lightsalmon;
+    border-radius: 20px;
+    border: 1px solid rgba(240, 128, 128, 0.562);;
+  }
+
+body{
+    height: 100vh;
+}
+
+
+/* botão Subir */
+div#but{
+    display: block;
+}
+
+div#but > a{  
+    position: fixed;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    bottom: 30px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.616);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div#but > a > button{
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+/* Cabecalho */
+header{
+    padding: 10px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+menu{
+    column-gap: 30px;
+    background-color: white;
+}
+
+header, menu{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > menu > div > a{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+header > menu > div > a:hover{
+    text-decoration: underline;
+    background-color: rgba(173, 216, 230, 0.39);
+    transition: .5s;
+    translate: ease;
+}
+
+h1{
+    font-size: 2.5em;
+    padding-bottom: 10px;
+}
+
+/* Banner 1 */
+section#bannerM{
+    width: 100%;
+    height: 480px;
+    background-color: gray;
+    background-image: url(../imagem/macarraoBanner.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.466);
+}
+
+div.banInfo{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.185);
+    text-align: center;
+    padding: 10px;
+
+    width: 300px;
+    height: 120px;
+    border: 2px solid white;
+    border-radius: 10px 10px;
+}
+
+div.banInfo:hover{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.719);
+    transition: .3s;
+    translate: ease;
+}
+
+div.banInfo > h3{
+    text-decoration: underline;
+    font-size: 1.4em;
+}
+
+div.banInfo > p{
+    padding-top: 5px;
+    font-size: 1.2em;
+}
+
+/* Conteudo Principal */
+main{
+    width: 100%;
+    background-color: white /*rgba(54, 14, 14, 0.58)*/;
+    padding-bottom: 20px;
+}
+
+h2{
+    font-size: 2em;
+    padding: 20px 35px;
+    color: black;
+}
+
+/* Sessão Produtos */
+/* Produtos Cards */
+section#pro img{
+    height: 180px;
+    width: 200px;
+}
+
+article#produtos{
+    margin: 20px;
+    padding-bottom: 23px;
+
+    display: flex;
+    flex-flow: wrap row;
+    row-gap: 40px;
+    column-gap: 5px;
+}
+
+div.ficha{
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-flow: nowrap row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+
+    transition: .4s;
+    translate: ease;
+}
+
+div.ficha:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+}
+
+div.ficha:hover .txtInfo{
+    background-color: rgb(42, 224, 215);
+    color: white;
+    text-decoration: underline;
+}
+
+div.txtInfo{
+    background-color: rgba(32, 178, 171, 0.637);
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+div.txtInfo > h3{
+    font-size: 1.5em;
+}
+
+div.txtInfo > p{
+    font-size: 1.3em;
+}
+
+/* Banner 2 */
+section#bannerS{
+    width: 100%;
+    height: 500px;
+    background-color: gray;
+    background-image: url(../imagem/sorveteBanner.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.466);
+}
+
+div#banS{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(251, 255, 0, 0.137);
+}
+
+/* Sessão Beneficios */
+section#ben{
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+/* Beneficios - Titulo */
+section#ben > article#ben-txt{
+    text-align: center;
+}
+
+section#ben > article#ben-txt > h2{
+    font-size: 2.3em;
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+
+section#ben > article#ben-txt > h2 span{
+    font-size: .8em;
+    font-weight: 400;
+}
+
+/* Beneficios - Artigos */
+section#ben > article#ben-cont{
+    display: flex;
+    align-items: center;
+    flex-flow: nowrap column;
+}
+
+section#ben > article#ben-cont > div.ben-ficha{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+    display: flex;
+    margin: 20px 0px;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    transition: .2s;
+}
+
+/* Beneficos - Artigo - Texto */
+section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info{
+    padding: 10px;
+    width: 100%;
+}
+
+section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info:hover{
+    padding: 10px;
+    width: 100%;
+    background-color: lightcoral;
+    
+}
+
+section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info > p{
+    text-align: justify;
+}
+
+/* Beneficios - Artigo - Imagem */
+div.foto img{
+    height: 190px;
+    width: 200px;
+}
+
+/* Sessão Contato */
+/* Banner 3 */
+section#con{
+    position: absolute;
+    background-color: gray;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding: 0%;
+    margin: 0px;
+}
+
+section#con > div#bannerT{
+    background-color: lightcoral;
+    display: block;
+    background-image: url(../imagem/tubinhosBanner.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 40%;
+}
+
+section#con > div#cont{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#cont > div.item{
+    margin-bottom: 15px;
+    border: 2px solid white;
+
+    transition: 0.5s;
+    transform: ease;
+}
+
+div#cont > div.item > a{
+    text-decoration: none;
+}
+
+div#cont > div.item > a > button{
+    width: 250px;
+    height: 55px;
+    padding: 30px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: transparent;
+    color: white;
+    border: none;
+
+    font-size: 1em;
+    font-weight: 600;
+}
+
+div#cont > div.item > a > button > i{
+    font-size: 2em;
+}
+
+div#cont > div.item:hover{
+    background-color: white;
+}
+
+div#cont > div.item > a > button:hover{
+    color: black;
+}
+
+section#con > div#cont > h2#subtitulo{    
+    color: white;
+}
