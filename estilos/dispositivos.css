@@ -64,6 +64,7 @@ Tv: de 1200px para mais+
     section#pro img{
         height: 200px;
         width: 220px;
+        object-fit: cover;
     }
 
     div.txtInfo{
@@ -148,6 +149,7 @@ Tv: de 1200px para mais+
     div.foto img{
         height: 290px;
         width: 240px;
+        object-fit: cover;
     }
 
     /* Sessão Contato */
@@ -219,6 +221,7 @@ Tv: de 1200px para mais+
     section#pro img{
         height: 220px;
         width: 240px;
+        object-fit: cover;
     }
 
     div.txtInfo{
@@ -303,6 +306,7 @@ Tv: de 1200px para mais+
     div.foto img{
         height: 290px;
         width: 240px;
+        object-fit: cover;
     }
 
     /* Sessão Contato */
@@ -379,6 +383,7 @@ Tv: de 1200px para mais+
     section#pro img{
         height: 220px;
         width: 240px;
+        object-fit: cover;
     }
 
     div.txtInfo{
@@ -469,6 +474,7 @@ Tv: de 1200px para mais+
     div.foto img{
         height: 290px;
         width: 240px;
+        object-fit: cover;
     }
 
     /* Sessão Contato */

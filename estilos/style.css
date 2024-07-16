@@ -155,6 +155,7 @@ h2{
 section#pro img{
     height: 180px;
     width: 200px;
+    object-fit: cover;
 }
 
 article#produtos{
@@ -290,6 +291,7 @@ section#ben > article#ben-cont > div.ben-ficha > div.ben-txt-info > p{
 div.foto img{
     height: 180px;
     width: 190px;
+    object-fit: cover;
 }
 
 /* Sessão Contato */
